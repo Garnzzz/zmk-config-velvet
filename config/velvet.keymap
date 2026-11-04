@@ -39,14 +39,16 @@
     };
 
     behaviors {
-        ltq: ltq {
+        mtq: mtq {
             compatible = "zmk,behavior-hold-tap";
-            label = "LTQ";
-            bindings = <&mo>, <&kp>;
+            label = "MTQ";
+            bindings = <&mt>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <180>;
+            flavor = "balanced";
+            hold-trigger-on-release;
         };
 
         rsr_vol: rsr_vol {
@@ -55,6 +57,18 @@
             tap-ms = <5>;
             cw-binding = <&kp C_VOL_UP>;
             ccw-binding = <&kp C_VOL_DN>;
+        };
+
+        LTQ: LTQ {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LTQ";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            flavor = "balanced";
+            hold-trigger-on-release;
         };
     };
 
@@ -72,15 +86,15 @@
 
         BASE {
             bindings = <
-&kp ESC    &kp N1     &kp N2    &kp N3        &kp N4  &kp N5                &kp NUMBER_6  &kp N7  &kp N8      &kp N9      &kp N0     &kp BACKSPACE
-&kp TAB    &kp Q      &kp W     &kp E         &kp R   &kp T      &mkp RCLK  &kp Y         &kp U   &kp I       &kp O       &kp P      &kp BSLH
-&kp CAPS   &kp A      &kp S     &kp D         &kp F   &kp G      &mkp MCLK  &kp H         &kp J   &kp K       &kp L       &kp SEMI   &kp APOS
-&kp LSHFT  &kp Z      &kp X     &kp C         &kp V   &kp B      &mkp LCLK  &kp N         &kp M   &kp COMMA   &kp PERIOD  &kp SLASH  &kp ENTER
-           &kp LCTRL  &kp LGUI  &kp LEFT_ALT  &mo 1   &kp SPACE             &kp SPACE     &mo 2   &kp DELETE  &kp MINUS   &kp EQUAL
+&kp ESC  &kp N1               &kp N2               &kp N3           &kp N4             &kp N5              &kp NUMBER_6  &kp N7        &kp N8            &kp N9            &kp N0                         &kp BACKSPACE
+&kp TAB  &kp Q                &kp W                &kp E            &kp R              &kp T    &mkp RCLK  &kp Y         &kp U         &kp I             &kp O             &kp P                          &kp BSLH
+&mo 4    &mtq LEFT_CONTROL A  &mtq LEFT_GUI S      &mtq LEFT_ALT D  &mtq LEFT_SHIFT F  &kp G    &mkp MCLK  &kp H         &mtq RSHFT J  &mtq RIGHT_ALT K  &mtq RIGHT_GUI L  &mtq RIGHT_CONTROL APOSTROPHE  &kp SEMICOLON
+&mo 3    &mtq LC(Z) Z         &mtq LC(X) X         &mtq LC(C) C     &mtq LC(V) V       &kp B    &mkp LCLK  &kp N         &kp M         &kp COMMA         &kp PERIOD        &kp SLASH                      &mo 3
+         &kp TILDE            &kp LA(PRINTSCREEN)  &kp ESC          &LTQ 1 BACKSPACE   &kp TAB             &kp RET       &LTQ 2 SPACE  &sk LSHFT         &kp MINUS         &kp EQUAL
             >;
 
             label = "BASE";
-            sensor-bindings = <&rsr_vol &rsr_trans>;
+            sensor-bindings = <&scroll_encoder>, <&rsr_trans>;
         };
 
         layer_1 {
