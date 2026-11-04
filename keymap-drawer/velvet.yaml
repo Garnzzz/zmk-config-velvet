@@ -26,24 +26,24 @@ layers:
   - O
   - P
   - {t: \, s: '|'}
-  - $$mdi:apple-keyboard-caps$$
-  - A
-  - S
-  - D
-  - F
+  - '4'
+  - {t: A, h: '&mt LEFT_CONTROL'}
+  - {t: S, h: '&mt LEFT_GUI'}
+  - {t: D, h: '&mt LEFT_ALT'}
+  - {t: F, h: '&mt LEFT_SHIFT'}
   - G
   - '&mkp MCLK'
   - H
-  - J
-  - K
-  - L
+  - {t: J, h: '&mt RSHFT'}
+  - {t: K, h: '&mt RIGHT_ALT'}
+  - {t: L, h: '&mt RIGHT_GUI'}
+  - {t: '''', h: '&mt RIGHT_CONTROL'}
   - {t: ;, s: ':'}
-  - ''''
-  - $$mdi:apple-keyboard-shift$$
-  - Z
-  - X
-  - C
-  - V
+  - '3'
+  - {t: Z, h: '&mt LC(Z)'}
+  - {t: X, h: '&mt LC(X)'}
+  - {t: C, h: '&mt LC(C)'}
+  - {t: V, h: '&mt LC(V)'}
   - B
   - '&mkp LCLK'
   - N
@@ -51,15 +51,15 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
+  - '3'
+  - '~'
+  - Alt+PRINTSCREEN
+  - Esc
+  - {t: '$$mdi:backspace-outline$$', h: '1'}
+  - $$mdi:keyboard-tab$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:apple-keyboard-control$$
-  - LGUI
-  - $$mdi:apple-keyboard-option$$
-  - '1'
-  - $$mdi:keyboard-space$$
-  - $$mdi:keyboard-space$$
-  - '2'
-  - $$mdi:backspace-reverse$$
+  - {t: '$$mdi:keyboard-space$$', h: '2'}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '-', s: _}
   - {t: '=', s: +}
   '1':
@@ -225,6 +225,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -236,8 +237,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held alternate}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -274,7 +274,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
