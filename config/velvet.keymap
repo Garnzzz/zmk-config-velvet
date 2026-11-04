@@ -91,7 +91,7 @@
 &kp TAB  &kp Q                &kp W                &kp E            &kp R              &kp T    &mkp RCLK  &kp Y         &kp U         &kp I             &kp O             &kp P                          &kp BSLH
 &mo 4    &mtq LEFT_CONTROL A  &mtq LEFT_GUI S      &mtq LEFT_ALT D  &mtq LEFT_SHIFT F  &kp G    &mkp MCLK  &kp H         &mtq RSHFT J  &mtq RIGHT_ALT K  &mtq RIGHT_GUI L  &mtq RIGHT_CONTROL APOSTROPHE  &kp SEMICOLON
 &mo 3    &mtq LC(Z) Z         &mtq LC(X) X         &mtq LC(C) C     &mtq LC(V) V       &kp B    &mkp LCLK  &kp N         &kp M         &kp COMMA         &kp PERIOD        &kp SLASH                      &mo 3
-         &kp TILDE            &kp LA(PRINTSCREEN)  &kp ESC          &LTQ 1 BACKSPACE   &kp TAB             &kp RET       &LTQ 2 SPACE  &sk LSHFT         &kp MINUS         &kp EQUAL
+         &kp TILDE            &kp LA(PRINTSCREEN)  &LTQ 5 ESCAPE    &LTQ 1 BACKSPACE   &kp TAB             &kp RET       &LTQ 2 SPACE  &sk LSHFT         &kp MINUS         &kp EQUAL
             >;
 
             label = "BASE";
@@ -160,11 +160,11 @@
 
         GAME {
             bindings = <
-&kp ESC    &kp N1    &kp N2  &kp N3  &kp N4     &kp N5             &kp N6     &kp N7    &kp N8     &kp N9   &kp N0    &kp MINUS
-&kp TAB    &kp Q     &kp W   &kp E   &kp R      &kp T   &trans     &kp Y      &kp U     &kp I      &kp O    &kp P     &kp BSLH
-&kp LSHFT  &kp A     &kp S   &kp D   &kp F      &kp G   &kp GRAVE  &kp H      &kp J     &kp K      &kp L    &kp APOS  &trans
-&kp LCTRL  &kp Z     &kp X   &kp C   &kp V      &kp B   &trans     &kp N      &kp M     &kp COMMA  &kp DOT  &kp FSLH  &trans
-           &kp LALT  &trans  &trans  &kp SPACE  &trans             &kp ENTER  &kp BSPC  &trans     &trans   &trans
+&kp ESC    &kp N1  &kp N2        &kp N3  &kp N4     &kp N5          &kp N6     &kp N7    &kp N8     &kp N9   &kp N0    &kp MINUS
+&kp TAB    &kp Q   &kp W         &kp E   &kp R      &kp T   &trans  &kp Y      &kp U     &kp I      &kp O    &kp P     &kp BSLH
+&kp LSHFT  &kp A   &kp S         &kp D   &kp F      &kp G   &trans  &kp H      &kp J     &kp K      &kp L    &kp APOS  &trans
+&kp LCTRL  &kp Z   &kp X         &kp C   &kp V      &kp B   &trans  &kp N      &kp M     &kp COMMA  &kp DOT  &kp FSLH  &trans
+           &trans  &kp LEFT_ALT  &trans  &kp SPACE  &trans          &kp ENTER  &kp BSPC  &trans     &trans   &trans
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
