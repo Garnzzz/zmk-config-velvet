@@ -54,7 +54,7 @@ layers:
   - MEDIA_ADJ
   - '~'
   - Alt+PRINTSCREEN
-  - ESC
+  - {t: ESCAPE, h: SCROLL}
   - {t: BACKSPACE, h: '1'}
   - TAB
   - RET
@@ -364,7 +364,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -404,7 +404,7 @@ layers:
   - D
   - F
   - G
-  - '`'
+  - {t: ▽, type: trans}
   - H
   - J
   - K
@@ -424,8 +424,8 @@ layers:
   - .
   - /
   - {t: ▽, type: trans}
-  - LALT
   - {t: ▽, type: trans}
+  - LEFT ALT
   - {t: ▽, type: trans}
   - SPACE
   - {t: ▽, type: trans}
