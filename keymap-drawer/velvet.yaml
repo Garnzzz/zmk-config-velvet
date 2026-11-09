@@ -109,8 +109,8 @@ layers:
   - F11
   - {t: ▽, type: trans}
   - F12
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ':'
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -119,34 +119,12 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - RET
   - BACKSPACE
   - ESCAPE
   - ''
   - {t: ▽, type: trans}
   RAISE:
-  - '~'
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - F12
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - UP ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -158,23 +136,45 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '!'
+  - '@'
+  - '['
+  - (
+  - '{'
+  - {t: ▽, type: trans}
+  - '}'
+  - )
+  - ']'
+  - '='
+  - '-'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT CONTROL
+  - $
+  - _
+  - LEFT SHIFT
+  - '*'
+  - {t: ▽, type: trans}
+  - PAGE UP
   - LEFT
+  - UP ARROW
   - DOWN
   - RIGHT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '#'
+  - ^
+  - +
+  - '&'
+  - '|'
+  - {t: ▽, type: trans}
+  - PAGE DOWN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
+  - PAUSE BREAK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -184,8 +184,8 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - BT CLR
-  - BT CLR ALL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   MEDIA_ADJ:
   - ''
   - {t: BT, h: '0'}
@@ -302,7 +302,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: RET, h: '&mt ESC'}
+  - ''
   - BACKSPACE
   - TAB
   - {t: ▽, type: trans}
@@ -499,3 +499,5 @@ layers:
 combos:
 - p: [0, 11]
   k: '&bootloader'
+- p: [13, 14]
+  k: Ctl+A
