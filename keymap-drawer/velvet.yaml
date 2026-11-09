@@ -27,23 +27,23 @@ layers:
   - P
   - \
   - SCROLL
-  - {t: A, h: '&mt LEFT_CONTROL'}
-  - {t: S, h: '&mt LEFT_GUI'}
-  - {t: D, h: '&mt LEFT_ALT'}
-  - {t: F, h: '&mt LEFT_SHIFT'}
+  - {t: A, h: LEFT CONTROL}
+  - {t: S, h: LEFT GUI}
+  - {t: D, h: LEFT ALT}
+  - {t: F, h: LEFT SHIFT}
   - G
   - '&mkp MCLK'
   - H
-  - {t: J, h: '&mt RSHFT'}
-  - {t: K, h: '&mt RIGHT_ALT'}
-  - {t: L, h: '&mt RIGHT_GUI'}
-  - {t: '''', h: '&mt RIGHT_CONTROL'}
+  - {t: J, h: RSHFT}
+  - {t: K, h: RIGHT ALT}
+  - {t: L, h: RIGHT GUI}
+  - {t: '''', h: RIGHT CONTROL}
   - ;
   - MEDIA_ADJ
-  - {t: Z, h: '&mt LC(Z)'}
-  - {t: X, h: '&mt LC(X)'}
-  - {t: C, h: '&mt LC(C)'}
-  - {t: V, h: '&mt LC(V)'}
+  - {t: Z, h: Ctl+Z}
+  - {t: X, h: Ctl+X}
+  - {t: C, h: Ctl+C}
+  - {t: V, h: Ctl+V}
   - B
   - '&mkp LCLK'
   - N
