@@ -55,6 +55,7 @@
             input-processors =
                 <&zip_xy_to_scroll_mapper &scroll_runtime_input_processor>,
                 <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>;
+                };
 
         snipe {
             layers = <7>; /* Matches the Sniper layer index */
